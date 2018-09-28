@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
   // Rotate into X with Menu Lines
@@ -102,6 +102,10 @@
       // Slide in from right
       transform: translate3d(0, 0, 0);
     }
+
+    &.current > a {
+      color: $secondary-color;
+    }
   }
 
   .nav-link {
@@ -111,7 +115,7 @@
     text-transform: uppercase;
     padding: 1 rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
