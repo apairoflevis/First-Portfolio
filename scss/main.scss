@@ -1,6 +1,7 @@
 // Make sure to save main.scss first before saving _config.scss (saving _config.scss first does not update webpage!)
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -24,9 +25,8 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 6rem;
+    font-size: 4rem;
   }
-
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
