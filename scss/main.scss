@@ -29,7 +29,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, $amount: 2), 0.5);
+    background: rgba(lighten($primary-color, $amount: 9), 0.5);
   }
 }
 
@@ -72,6 +72,14 @@ main {
       margin-top: 20vh;
     }
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3 rem;
 }
 
 .about-info {
@@ -184,6 +192,11 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 4rem;
+}
+
+// Cursor
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
 }
 
 @import "mobile";

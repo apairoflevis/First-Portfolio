@@ -21,7 +21,7 @@
     .btn-line {
       // Line 1 - Rotate
       &:nth-child(1) {
-        background: red;
+        background: #fff;
         transform: rotate(45deg) translate(5px, 5px);
       }
       //Line 2 - Hidden
@@ -30,7 +30,7 @@
       }
       //Line 3 - Rotate
       &:nth-child(3) {
-        background: black;
+        background: #fff;
         transform: rotate(135deg) translate(-6px, 6px);
       }
     }
