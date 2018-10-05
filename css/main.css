@@ -102,9 +102,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpeg);
-    background-attachment: fixed;
-    background-position: cover; }
+    background: url(../img/background.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden; }
     body#bg-img:after {
       content: "";
       position: absolute;
@@ -113,7 +114,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.6); }
+      background: rgba(68, 68, 68, 0.7); }
 
 h1,
 h2,
@@ -199,10 +200,8 @@ main {
     font-size: 1rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.75s ease-out; }
+    margin-bottom: 3rem; }
     .services div:hover {
-      opacity: 0.5;
       border-color: #ee281a;
       transition: all 0.75s ease-out; }
 
@@ -217,6 +216,22 @@ main {
       opacity: 0.5;
       border-color: #ee281a;
       transition: all 0.75s ease-out; }
+
+#contacts {
+  background: url(../img/contact.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: scroll; }
+  #contacts:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #444;
+    opacity: 0.9; }
 
 .boxes {
   display: flex;
